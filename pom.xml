@@ -8,8 +8,10 @@
     <artifactId>tutorials</artifactId>
     <packaging>pom</packaging>
     <version>1.0.0-SNAPSHOT</version>
+    <name>Tutorials Project</name>
     <modules>
         <module>hanoi</module>
+        <module>search</module>
     </modules>
 
     <properties>

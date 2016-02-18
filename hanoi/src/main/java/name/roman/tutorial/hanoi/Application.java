@@ -27,8 +27,8 @@ public class Application implements Runnable {
     public static void main(String[] args) {
         final HanoiSolver solver = new RecursiveHanoiSolver();
         final PieceMoveListener moveListener = (fromAxis, toAxis) ->
-                System.out.println("Move from " + fromAxis + " to " + toAxis);
-        new Application(solver, 4, moveListener).run();
+                System.out.println("Move from " + (fromAxis + 1) + " to " + (toAxis + 1));
+        new Application(solver, 3, moveListener).run();
     }
 
 }

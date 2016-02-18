@@ -6,7 +6,7 @@ package name.roman.tutorial.hanoi.solver;
 public class RecursiveHanoiSolver implements HanoiSolver {
 
     private int getThirdAxis(int fromAxis, int toAxis) {
-        return (7 ^ (1 << fromAxis | 1 << toAxis)) >> 1;
+        return 3 - (fromAxis + toAxis);
     }
 
     @Override
